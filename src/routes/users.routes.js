@@ -4,10 +4,10 @@ import { validateUser } from "../middlewares/validation.users.js";
 
 const router = express.Router();
 
-router.get("/", userController.getUsers)
-router.post("/", validateUser, userController.postUsers)
-router.put("/:id", validateUser, userController.putUsers)      // 5. Actualizar usuario
-router.get("/age/:range", userController.getUsersByRange)     // 4. Filtrar por rango
+router.get("/", userController.getUsers)                       //Obtener usarios
+router.post("/", validateUser, userController.postUsers)       //Agregar usuario
+router.put("/:id", validateUser, userController.putUsers)      //Actualizar usuario
+router.get("/age/:range", userController.getUsersByRange)      //Filtrar por range
 
 
 export default router
