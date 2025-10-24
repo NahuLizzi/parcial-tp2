@@ -16,8 +16,8 @@ const putUsers = async (id, data) =>{
     return user
 }
 
-const getUsersByRange = async (min, max) => {
-    const users = await userModel.getUsersByRange(min, max)
+const getUsersByRange = async (range) => {
+    const users = await userModel.getUsersByRange(range)
     return users
 }
 

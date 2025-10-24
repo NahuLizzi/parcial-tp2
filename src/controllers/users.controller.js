@@ -20,8 +20,8 @@ const putUsers = async  (req, res) =>{
 }
 
 const getUsersByRange = async (req, res) => {
-    const {min, max} = req.query
-    const users = await usersService.getUsersByRange(min, max)
+    const {range} = req.params
+    const users = await usersService.getUsersByRange(range)
     res.send(users)
 }
 

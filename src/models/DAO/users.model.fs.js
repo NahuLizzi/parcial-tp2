@@ -1,4 +1,29 @@
-const users = []
+const users = [
+    { 
+        id: 1, 
+        name: "Nahuel", 
+        email: "nahue@example.com", 
+        age: 28 
+    },
+        { 
+        id: 2, 
+        name: "Pepe", 
+        email: "pepe@example.com", 
+        age: 45
+    },
+    { 
+        id: 3, 
+        name: "roberto", 
+        email: "roberto@example.com", 
+        age: 28 
+    },
+    { 
+        id: 4, 
+        name: "Pérez", 
+        email: "perez@example.com", 
+        age: 80
+    }
+]
 
 const getUsers = async () => {
     return await users
